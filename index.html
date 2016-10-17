@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>3D Model of PCB 
+    </title>
+    <meta name="keywords" content="html5, webgl, 3D, 3d" />
+    <meta name="author" content="Jaroslav Rehak" />
+    <meta charset="windows-1250">
+    <link rel="icon" type="image/ico" href="img/fav.ico">
+    <link rel="stylesheet" href="css_1.css" type="text/css" media="screen" />
+    <script src="scr/Linker.js" type="text/javascript"></script>
+    <script src="scr/3de_parser.js" type="text/javascript"></script>
+    <script src="scr/Loading.js" type="text/javascript"></script>
+  </head>
+  <body onload="zacni('board');">
+    <header id="header">
+      <img id="title" src="img/web_title_new.png" alt="Nadpis"/>
+    </header>
+    <div id="content">
+      <canvas id="canvas" width="650" height="400">Vas prohlizec bohuzel nepodporuje 3D pro webgl vykreslovani! 
+      </canvas>
+      <div id="items">
+        <h3 onclick="RelZvetseni(1.1);">Přiblížit</h3>
+        <h3 onclick="RelZvetseni(0.9);">Oddálit</h3>
+        <h3 onclick="RelOtoc(0,-10, 0);">Otočit vlevo</h3>
+        <h3 onclick="RelOtoc(0,10, 0);">Otočit vpravo</h3>
+        <h3 onclick="RelOtoc(-10,0, 0);">Otočit nahoru</h3>
+        <h3 onclick="RelOtoc(10,0, 0);">Otočit dolu</h3>
+        <h3 onclick="Native()">Původní poloha</h3>
+      </div>
+      <div id="div1">
+        <h3 onclick="loadStart();LoadModels('board');">Deska 1</h3>
+        <h3 onclick="RelOtoc(0,0, 10);">Rotace L</h3>
+        <h3 onclick="RelPosun(0, 1, 0);">Posun nahoru</h3>
+        <h3 onclick="RelOtoc(0,0, -10);">Rotace R</h3>
+        <h3 onclick="loadStart();LoadModels('board3');">Deska 2</h3>
+        <h3 onclick="RelPosun(-1,0, 0);">Posun vlevo</h3>
+        <h3 onclick="RelPosun(0,-1, 0);">Posun dolu</h3>
+        <h3 onclick="RelPosun(1,0, 0);">Posun vpravo </h3>
+      </div>
+      <form id ="checkboxdiv">
+        <input type="checkbox" name="check0" checked="checked" onclick="visibility()">
+        <input type="checkbox" name="check1" checked="checked" onclick="visibility()">
+        <input type="checkbox" name="check2" checked="checked" onclick="visibility()">
+        <input type="checkbox" name="check3" checked="checked" onclick="visibility()">
+        <input type="checkbox" name="check4" checked="checked" onclick="visibility()">
+        <input type="checkbox" name="check5" checked="checked" onclick="visibility()">
+        <input type="checkbox" name="check6" checked="checked" onclick="visibility()">
+      </form>
+      <div id="obr_vis1">
+        <img id="img1" src="img/web_pictures.png" alt="web_pictures.png, 41kB" title="web_pictures">
+      </div>
+      <div id="obr_vis2">
+        <img id="img2" src="img/web_visibility.png" alt="web_visibility.png, 7,7kB" title="web_visibility">
+      </div>
+    </div>
+    <footer id="footer">Copyright: Jaroslav Řehák (TUL, FM, IT), 2012 
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Ověřit CSS!" />
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

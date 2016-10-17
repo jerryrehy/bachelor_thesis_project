@@ -1,0 +1,110 @@
+/* CSS Document */
+
+body{
+  background-color: #427939;
+}
+
+header{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content{
+  position: relative;
+  top: 0px;
+  background: url(img/web_bg.png) no-repeat;
+  width: 1000px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#items{
+  position: absolute;
+  left: 696px; top: 4px;
+  width: 300px;
+  height: 500px;
+  padding-top: 5px;
+}
+
+
+canvas{
+  position: absolute;
+  margin: 20px 20px 20px 20px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+footer{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  color: white;  
+}
+
+#items h3{
+  color: white;
+  background: url(img/web_button.png) no-repeat;
+  width: 300px;
+  height: 50px;
+  margin: 0px;
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 18px;
+}
+
+#items h3:hover{
+  cursor: pointer;
+  color: #427939;
+}
+
+#div1 h3:hover{
+  cursor: pointer;
+  color: #427939;
+}
+
+#div1{
+  position: absolute;
+  top: 450px; left: 4px;
+  width: 992px;
+  height: 100px;
+  background: url(img/web_double.png) no-repeat;
+}
+
+#div1 h3{
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  width: 240px;
+  height: 10px;
+  padding-top: 2px; 
+  color: white;
+  display: block;
+  float: left;
+}
+
+#checkboxdiv{
+  position: absolute;
+  left: 4px; top: 615px;
+  width: 992px;
+  height: 20px;
+  background-color: black;
+}
+
+#checkboxdiv input{
+  width: 130px;
+}
+
+#obr_vis1 img{
+  position: absolute;
+  top: 555px;
+  height: 60px;
+}
+
+#obr_vis2 img{
+  position: absolute;
+  top: 640px;
+  height: 50px;
+}
